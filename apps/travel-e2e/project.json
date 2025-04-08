@@ -1,0 +1,9 @@
+{
+  "name": "travel-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/travel-e2e/src",
+  "implicitDependencies": ["travel"],
+  "// targets": "to see all targets run: nx show project travel-e2e --web",
+  "targets": {}
+}
