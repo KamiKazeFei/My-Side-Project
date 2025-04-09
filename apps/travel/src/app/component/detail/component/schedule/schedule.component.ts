@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { PrimengModule } from '../../../../module/primeng/primeng.module';
 
 @Component({
   selector: 'app-schedule',
-  imports: [CommonModule],
   templateUrl: './schedule.component.html',
   styleUrl: './schedule.component.css',
+  imports: [PrimengModule],
+  standalone: true,
 })
-export class ScheduleComponent {}
+export class ScheduleComponent { }

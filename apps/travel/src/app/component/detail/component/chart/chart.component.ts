@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { PrimengModule } from '../../../../module/primeng/primeng.module';
 
 @Component({
   selector: 'app-chart',
-  imports: [CommonModule],
   templateUrl: './chart.component.html',
   styleUrl: './chart.component.css',
+  imports: [PrimengModule],
+  standalone: true,
 })
-export class ChartComponent {}
+export class ChartComponent { }

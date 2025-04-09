@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { PrimengModule } from '../../module/primeng/primeng.module';
 
 @Component({
   selector: 'app-basic-info',
-  imports: [CommonModule],
   templateUrl: './basic-info.component.html',
   styleUrl: './basic-info.component.css',
+  imports: [PrimengModule],
+  standalone: true,
 })
-export class BasicInfoComponent {}
+export class BasicInfoComponent { }
