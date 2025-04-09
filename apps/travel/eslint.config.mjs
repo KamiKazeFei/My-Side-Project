@@ -23,12 +23,19 @@ export default [
           prefix: 'app',
           style: 'kebab-case',
         },
-      ],
+      ]
     },
   },
   {
     files: ['**/*.html'],
-    // Override or add rules here
-    rules: {},
+    rules: {
+      "@angular-eslint/template/no-positive-tabindex": "off",
+      "@angular-eslint/template/no-autofocus": "off",
+      "@angular-eslint/template/mouse-events-have-key-events": "off",
+      "@angular-eslint/template/click-events-have-key-events": "off",
+      "@angular-eslint/template/accessibility-interactive-supports-focus": "off",
+      "@angular-eslint/template/interactive-supports-focus": "off",
+      "jsx-a11y/click-events-have-key-events": "off"
+    },
   },
 ];
